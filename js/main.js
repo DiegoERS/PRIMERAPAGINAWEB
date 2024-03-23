@@ -11,10 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         esValido ? manejarExito() : manejarError();
 
-
-
-
-
     });
 
 
@@ -33,7 +29,7 @@ const obtenerDatosFormulario = () => {
 };
 
 const validarContrasenia = (contrasenia) =>
- /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[a-zA-Z]).{8,}$/.test(contrasenia);
+ /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[a-zA-Z]).{8,11}$/.test(contrasenia);
 
 
 const validarCorreo=(correo)=>
@@ -53,4 +49,8 @@ const limpiarCamposTexto=()=>{
     campos.forEach((campo)=>campo.value="");
 
 };
+
+
+
+
 
